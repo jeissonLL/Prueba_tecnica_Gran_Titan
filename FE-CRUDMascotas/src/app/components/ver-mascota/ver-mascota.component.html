@@ -1,0 +1,17 @@
+<div class="title">
+    <h1>Ver mascota</h1>
+</div>
+<div *ngIf="Mascota != null" class="container">
+    <mat-card class="card">
+        <mat-card-title>{{Mascota.nombre}}</mat-card-title>
+        <mat-card-content>
+            <p><strong>Raza:</strong> {{Mascota.especie}} </p>
+            <p><strong>Color:</strong> {{Mascota.iddueno}} </p>
+            <p><strong>Peso:</strong> {{Mascota.fechanacimiento}}</p>
+            <p><strong>Edad:</strong> {{Mascota.raza}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button [routerLink]="['/listMascotas']" mat-raised-button>Volver</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
